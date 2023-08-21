@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:youeat/backend/data/data.dart';
 
+import '../data/data.dart';
 import '../widgets/bottom_nav_bar.dart';
 import '../widgets/order_container.dart';
 import '../widgets/texts/big_text.dart';
@@ -10,6 +10,23 @@ class OrdersScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Assuming all lists have at least 3 items before removing
+    if (customerNames.length >= 3 &&
+        foodImages.length >= 3 &&
+        quantity.length >= 3 &&
+        prices.length >= 3 &&
+        foodNames.length >= 3 &&
+        orderNumbers.length >= 3) {
+      customerNames = customerNames.sublist(2);
+      foodImages = foodImages.sublist(2);
+      quantity = quantity.sublist(2);
+      prices = prices.sublist(2);
+      foodNames = foodNames.sublist(2);
+      orderNumbers = orderNumbers.sublist(2);
+    }
+
+// Now, you can use the modified lists in your OrderCard widget
+
     return Scaffold(
       body: Stack(
         children: [
@@ -37,6 +54,7 @@ class OrdersScreen extends StatelessWidget {
                         price: prices[index],
                         foodName: foodNames[index],
                         orderNumber: orderNumbers[index],
+                        serve: 'served',
                       );
                     },
                     separatorBuilder: (context, index) {

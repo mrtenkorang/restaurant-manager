@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../backend/data/data.dart';
+import '../data/data.dart';
 import '../widgets/bottom_nav_bar.dart';
 import '../widgets/order_container.dart';
 import '../widgets/stat_container.dart';
@@ -108,6 +108,7 @@ class DashBoardScreen extends StatelessWidget {
                         price: prices[index],
                         foodName: foodNames[index],
                         orderNumber: orderNumbers[index],
+                        serve: 'serve',
                       );
                     },
                     separatorBuilder: (context, index) {

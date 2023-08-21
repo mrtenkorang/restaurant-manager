@@ -11,6 +11,7 @@ class OrderCard extends StatelessWidget {
   final int quantity;
   final double price;
   final int orderNumber;
+  final String serve;
   const OrderCard({
     super.key,
     required this.customerName,
@@ -19,6 +20,7 @@ class OrderCard extends StatelessWidget {
     required this.price,
     required this.foodName,
     required this.orderNumber,
+    required this.serve,
   });
 
   @override
@@ -124,8 +126,8 @@ class OrderCard extends StatelessWidget {
               onTap: () {
                 print('You just got served');
               },
-              child: const OnTopContainer(
-                text: 'Served',
+              child: OnTopContainer(
+                text: serve,
                 color: Colors.white,
                 size: 20,
               ),
