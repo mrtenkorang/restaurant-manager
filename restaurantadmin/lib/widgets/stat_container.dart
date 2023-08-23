@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:youeat/frontend/widgets/texts/big_text.dart';
-import 'package:youeat/frontend/widgets/texts/small_text.dart';
+import 'package:youeat/widgets/texts/big_text.dart';
+import 'package:youeat/widgets/texts/small_text.dart';
 
 class StatContainer extends StatelessWidget {
   final Color? color;

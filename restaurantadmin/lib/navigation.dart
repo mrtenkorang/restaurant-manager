@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
-import 'frontend/screens/home_screen.dart';
-import 'frontend/screens/orders_screen.dart';
+import 'package:youeat/screens/home_screen.dart';
+import 'package:youeat/screens/orders_screen.dart';
 
 class AppNavigation {
   final GoRouter router = GoRouter(

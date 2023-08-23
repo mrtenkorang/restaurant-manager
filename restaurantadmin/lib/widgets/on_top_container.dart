@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:youeat/frontend/widgets/texts/small_text.dart';
+import 'package:youeat/widgets/texts/small_text.dart';
 
 class OnTopContainer extends StatelessWidget {
   final String text;

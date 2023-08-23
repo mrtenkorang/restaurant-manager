@@ -35,7 +35,7 @@ class OrdersScreen extends StatelessWidget {
             child: Container(
               height: 50,
               width: MediaQuery.of(context).size.width,
-              child: Center(child: BigText(text: 'All Orders')),
+              child: Center(child: BigText(text: 'Served Orders')),
             ),
           ),
           Positioned(
